@@ -33,12 +33,13 @@ main {
     background-color: #ffffff;
     overflow-y: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
     grid-template-areas: 
     "main-window" "main-widget"
-    "main-widnow"  "main-widget";                       ;
+    "main-window"  "main-widget";
 
 }
+
 
 footer {
     grid-area: footer;
@@ -74,4 +75,21 @@ nav a {
 
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.1);
+}
+.box {
+    background-color: #e9ecef;
+    height: 150px; width: 200px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #e96900;
+    text-align: center;
+}
+.main-window {
+    grid-area: main-window;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex; gap: 20px; flex-wrap: wrap;
+    
 }
